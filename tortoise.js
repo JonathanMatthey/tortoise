@@ -47,12 +47,14 @@ var Tortoise = ( function( window, undefined ) {
       console.log('no queued progress alert - exiting');
       return;
     }
-    console.log('optons',alert.options);
     $.each(delayedMsgTimeouts,function(i,obj){
       clearTimeout(obj);
     });
     var lastMsg = alert.options.messages[alert.options.messages.length-1].message;
     delayedMessage(alert, lastMsg, 10, 100, 100)
+    setTimeout(function(){
+      alert.hide()
+    },1000);
   }
 
   function myOtherMethod() {
