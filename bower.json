@@ -1,0 +1,29 @@
+{
+  "name": "tortoise",
+  "version": "1.0.1",
+  "authors": [
+    "Jonathan Matthey <mattheyj@gmail.com>"
+  ],
+  "description": "Realistic and Timely Progress Client-side Growl-like Notifications.",
+  "main": "dist/tortoise.js",
+  "keywords": [
+    "realistic progress alerts",
+    "alerts",
+    "notification",
+    "toast",
+    "growl",
+    "ajax"
+  ],
+  "license": "MIT",
+  "homepage": "www.tortoise.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "messenger": "~1.4.1"
+  }
+}
